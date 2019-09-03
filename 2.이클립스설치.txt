@@ -1,0 +1,148 @@
+
+자바개발을 위한 통합 개발 환경(IDE)를 제공하는 무료 프로그램
+
+[eclipse 설치]
+
+1. http://www.eclipse.org 접속후 다운로드
+   Eclipse IDE for Java EE Developers다운로드
+   ->eclipse-jee-이클립스버전-SR2-win비트수.zip
+
+
+  
+
+  
+
+
+
+2. 설치
+
+   
+   ->압축을  푼다
+   ->eclipse.exe더블 클릭
+   ->작업공간인 workspace폴더 지정
+
+   ->설치후 자바 컴파일러 및 JRE확인  및 인코딩 설정
+     WINDOWS->PREFERENCE:JAVA에서 확인
+  
+ 
+
+3. 한글 플러그인(babel프로젝트) 설치
+
+   ->http://www.eclipse.org접속후 [babel검색]
+   ->구글의 최 상단 Eclipse Babel Project 클릭
+   ->http://www.eclipse.org/babel이동
+   ->아래 내용중 downloads링크 클릭
+   ->http://www.eclipse.org/babel/downloads.php로 이동 됨
+   ->내용중  Eclipse Babel Project Archived Downloads. 클릭
+     이클립스 버전에 맞는 팩 다운(버전이 안맞는 경우 이클립스가 실행이 안됨)
+
+     BabelLanguagePack-eclipse-ko_3.7.0.v20111128043401.zip (84.79%)
+
+
+
+   ->압축을 푼다
+
+   ->features폴더와 plugins폴더를 2에서 설치한 eclipse폴더에 덮어쓰기를 한다
+
+
+4. Tomcat 플러그인 설치
+
+   4-1.설치
+
+   http://www.eclipsetotale.com/tomcatPlugin.html->tomcatPluginV33.zip 다운로드
+
+  
+  ->압축을 푼후 com.sysdeo.eclipse.tomcat_3.3.0디렉토리를 
+  ->이클립스가 설치 된 디렉토리의 plugins디렉토리에 복사한다 그러면 설치 끝
+
+   4-2. 플러그인 적용을 위한 이클립스 환경성정
+
+       창->환경설정으로 가면 Tomcat이라는 메뉴가 생겨났다->클릭후
+       ->본인이 설치한 Tomcat버전을 선택하고 Tomcat home을 톰캣이 설치된
+         디렉토리로 설정해준다(C:\Java\Tomcat 버전)
+
+      그러면  이클립스 상단화면에 고양이 3마리가 나탄난다.끝..
+
+
+   ※Tomcat프로젝트도 별도로 생긴다. 이클립스의 Dynamic Web project는 서블릿규약의
+     디렉토리 구조가 아니나 Tomcat 프로젝트은 표준 디렉토리 구조를 갖느다
+         
+
+4. 이클립스에 윈도우용 프러그인을 설치하면 
+   4GL언어 처럼 드래그 앤 드랍으로 UI구성
+
+	
+   구글에서 이클립스용 WindowBuilder Pro를 제공.
+
+
+   * 설치는 도움말->Install new Software>find and install에서 설치 ->
+    work with에 아래주소 입력후 엔터
+
+   Eclipse 3.7 (Indigo)
+   http://dl.google.com/eclipse/inst/d2wbpro/latest/3.7  
+
+   Eclipse 3.6 (Helios)
+   http://dl.google.com/eclipse/inst/d2wbpro/latest/3.6
+
+   Eclipse 3.5 (Galileo)
+   http://dl.google.com/eclipse/inst/d2wbpro/latest/3.5
+
+
+** 이클리스 버전별 명칭 
+	------------------------------------------------------------
+	명칭           출시년도        버전              프로젝트명
+	--------------------------------------------------------
+	Europa          2007년        3.3버전        Europa 프로젝트
+	-----------------------------------------------------------
+	Galieo          2009년        3.5버전        Galileo프로젝트
+	----------------------------------------------------------
+        Indogo          2011년        3.7버전        Indigo프로젝트
+	-------------------------------------------------------
+        Juno            2012년 6월    3.8 과 4.2      Juno프로젝트
+	--------------------------------------------------
+        Kepler         2013년         4.3          Kepler프로젝트
+	------------------------------------------------------------------
+ 	Luna           2014년         4.4          Luna프로젝트
+	------------------------------------------------------------------
+	Mars           2015년         4.5         Mars프로젝트
+	------------------------------------------------------------------
+	Neon           2016년         4.6         Neon프로젝트-설치 프로그램 버전
+	------------------------------------------------------------------
+	
+	※NEON부터 압축버전이 아닌 설치버전으로 업그레이드 됨.
+
+*eclipse.exe가 실행 안될시
+
+	1)eclipse.ini파일 열어서 openFile밑에 아래 내용 추가
+		-vm
+		C:\java\jdk버전\bin\javaw.exe
+
+	2)1)번을 했는데도 안되는 경우
+
+		C:\java\jdk버전\jre\bin\server\jvm.dll
+
+	3)2)번까지 햇는데도 안되면
+
+		256M->128M 바꿔주면 됨.
+
+
+        ※The Eclipse executable launcher was unable to locate its companion shared library.메시지 오류시
+          압축풀 폴더명을 짧게해서 해당 폴더에 푼다
+
+		
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+   
